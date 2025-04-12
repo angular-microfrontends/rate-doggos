@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
+import { SINGLE_SPA_PROPS, SingleSpaProps } from './single-spa-props';
 
 @Component({
   selector: 'rate-doggos-root',
@@ -7,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'rate-doggos';
+  title = 'angular-mfe-rate-doggos';
+  protected singleSpaProps: SingleSpaProps;
+  constructor(@Inject(SINGLE_SPA_PROPS) singleSpaProps: SingleSpaProps) {
+    this.singleSpaProps = singleSpaProps;
+  }
 }
