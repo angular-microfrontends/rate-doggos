@@ -1,12 +1,24 @@
 import { provideExperimentalZonelessChangeDetection } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { SingleSpaProps, SINGLE_SPA_PROPS } from './single-spa-props'
+import * as singleSpa from 'single-spa';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
+    const props: SingleSpaProps = {
+      favoriteDog: "Franklin",
+      mountParcel: singleSpa.mountRootParcel,
+      name: "angular-mfe-rate-doggos",
+      singleSpa
+    }
+
     await TestBed.configureTestingModule({
       imports: [AppComponent],
-      providers: [provideExperimentalZonelessChangeDetection()]
+      providers: [provideExperimentalZonelessChangeDetection(), {
+        provide: SINGLE_SPA_PROPS,
+        useFactory: () => props
+      }]
     }).compileComponents();
   });
 
@@ -26,6 +38,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, angular-mfe-rate-doggos');
+    expect(compiled.textContent).toContain('Rate doggos Franklin');
   });
 });
