@@ -16,7 +16,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular-mfe-rate-doggos",
+            "outputPath": "dist/rate-doggos",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [],
