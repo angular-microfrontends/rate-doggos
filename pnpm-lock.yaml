@@ -39,8 +39,8 @@ importers:
         specifier: ^6.0.3
         version: 6.0.3
       single-spa-angular:
-        specifier: 10.0.0-beta.6
-        version: 10.0.0-beta.6(chokidar@4.0.3)(rxjs@7.8.2)(zone.js@0.15.0)
+        specifier: 10.0.0-beta.7
+        version: 10.0.0-beta.7(chokidar@4.0.3)(rxjs@7.8.2)(zone.js@0.15.0)
       tslib:
         specifier: ^2.3.0
         version: 2.8.1
@@ -3707,8 +3707,8 @@ packages:
     resolution: {integrity: sha512-ZpzWAFHIFqyFE56dXqgX/DkDRZdz+rRcjoIk/RQU4IX0wiCv1l8S7ZrXDHcCc+uaf+6o7w3h2l3g6GYG5TKN9Q==}
     engines: {node: ^18.17.0 || >=20.5.0}
 
-  single-spa-angular@10.0.0-beta.6:
-    resolution: {integrity: sha512-xnRxHyVP7AEpqCDpXVdbcyNjFC5N/qBo8bygsqnGI6+cTmxJxvb49NM+g2e8f5UgRZtYqyFwXYkMJsUhPxSnGA==}
+  single-spa-angular@10.0.0-beta.7:
+    resolution: {integrity: sha512-Cc+7YBXIGKseQpBvF2FMMv+H7ReVeYESZYE5YtpVwkInK5pR6UL1IOXCYoKSyZ0miOqEYJe7GjXFKkU25FPQAA==}
 
   single-spa@6.0.3:
     resolution: {integrity: sha512-pXlwHXHhs3hx/MnGQHBLdFCVAN2rlm9TLBKazbDMyZ25QRxoen2vlUZ47MyXKa9K8Gd5UZs/gkuQad4TGbViwg==}
@@ -8175,7 +8175,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  single-spa-angular@10.0.0-beta.6(chokidar@4.0.3)(rxjs@7.8.2)(zone.js@0.15.0):
+  single-spa-angular@10.0.0-beta.7(chokidar@4.0.3)(rxjs@7.8.2)(zone.js@0.15.0):
     dependencies:
       '@angular-devkit/core': 19.2.7(chokidar@4.0.3)
       '@angular-devkit/schematics': 19.2.7(chokidar@4.0.3)
