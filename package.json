@@ -36,5 +36,5 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.7.2"
   },
-  "packageManager": "10.7.0"
+  "packageManager": "pnpm@10.7.0"
 }
